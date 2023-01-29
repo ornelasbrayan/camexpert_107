@@ -1,0 +1,14 @@
+# change folder in terminal
+cd <drag folder here>
+
+# start react project
+npm start
+
+# search file
+ctrl + p
+
+# move line to another
+alt + up/down
+
+# copy paste the hole line
+shift + alt + up/down

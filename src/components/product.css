@@ -1,0 +1,20 @@
+.product {
+    border: 2px solid black;
+    display: inline-block;
+    width: 340px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.product:hover {
+    border-color: rgb(243, 152, 15);
+}
+
+.product .prices { 
+    display: flex;
+}
+
+.product .prices label{
+    flex: 1;
+}
