@@ -11,7 +11,7 @@ function Product(){
             <label>Price</label>
             </div>
             <QuantityPicker></QuantityPicker>
-            <button className="btn btn-sm btn-outline-dark">Add</button>
+            <button className="add btn btn-sm btn-outline-danger">Add</button>
         </div>
     );
 }

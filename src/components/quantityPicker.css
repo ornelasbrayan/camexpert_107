@@ -3,3 +3,7 @@
     margin: 0 5px;
     font-weight: 600;
 }
+
+.qt-picker button {
+    padding-bottom: 4px;
+}
