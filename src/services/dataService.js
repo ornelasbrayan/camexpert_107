@@ -71,3 +71,18 @@ var catalog = [
     }
 
 ];
+
+class DataService {
+
+    getProducts() {
+        // TODO: connect to server and retrive to products to display
+
+        return catalog;
+    }
+
+
+
+}
+
+
+export default DataService;
