@@ -7,8 +7,18 @@
     border-radius: 4px;
 }
 
+.product:hover h5{
+    background-color: #dc3545;
+    color: white;
+    margin: 5px 5px;
+    padding: 6px;
+    
+}
+
 .product:hover {
-    border-color: rgb(243, 152, 15);
+    width: 350px;
+    height: 450px;
+    margin: 5px;
 }
 
 .product .prices { 
@@ -17,6 +27,16 @@
 
 .product .prices label{
     flex: 1;
+
+}
+
+.product .prices .total {
+    font-weight: 600;
+
+}
+
+.product .prices .price {
+    font-weight: 600;
 }
 
 .product img {
@@ -33,10 +53,24 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin: 5px 5px;
+    margin: 5px 10px;
     padding: 5px;
 }
 
 .product .add {
     margin-top: 6px;
+}
+
+@media (max-width: 400px) {
+    .product {
+        width: 80%;
+        margin-left: 5%;
+        height: auto;
+    }
+
+    .product img {
+        width: 90%;
+        height: auto;
+        max-height: 300px;
+    }
 }

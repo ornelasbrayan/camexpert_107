@@ -12,3 +12,6 @@ alt + up/down
 
 # copy paste the hole line
 shift + alt + up/down
+
+# replace words
+ctrl + f
