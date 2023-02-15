@@ -1,0 +1,4 @@
+.not-found {
+    background-image: url("/public/images/404-error-page.png");
+    min-height: 600px; 
+}
