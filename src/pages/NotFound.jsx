@@ -5,7 +5,7 @@ function NotFound(){
         <div className="not-found">
            
            <div>
-            <a href="/home">
+            <a className="mt-3 btn btn-primary" href="/home">
                 Go back to home
             </a>
            </div>

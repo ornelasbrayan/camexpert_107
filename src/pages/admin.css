@@ -1,3 +1,14 @@
 .admin {
-    background-color: rgb(102, 64, 64);
+    background-color: #E7E7E7;
+    
+}
+
+.admin h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.admin .parent {
+    display: flex;
+    justify-content: space-around;
 }

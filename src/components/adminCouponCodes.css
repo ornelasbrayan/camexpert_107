@@ -1,0 +1,17 @@
+.ad-coupon-codes {
+    display: block;
+    width: 400px;
+    border:  1px solid gray;
+    border-radius: 10px;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.ad-coupon-codes button {
+    margin-top: 10px;
+}
+
+.forms {
+    margin-left: 10px;
+    margin-right: 10px;
+}
