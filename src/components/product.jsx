@@ -28,7 +28,7 @@ function Product(props){
 
     function handleAdd(){
         console.log("Button clicked!", props.data);
-        addProductToCart();
+        addProductToCart(props.data);
     }
 
 
