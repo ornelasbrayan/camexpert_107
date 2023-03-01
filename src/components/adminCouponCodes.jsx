@@ -45,8 +45,8 @@ function AdminCouponCodes() {
                 </div>
             </div>
 
-            <ul>
-                {allCoupons.map(prod => <li key={prod.title}>{prod.title}</li>)}
+            <ul className="list-group list-group-flush ulist">
+                {allCoupons.map(prod => <li className="list-group-item" key={prod.code}>{prod.code} - {prod.discount}%</li>)}
             </ul>
 
 

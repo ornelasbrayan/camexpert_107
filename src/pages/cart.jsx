@@ -7,6 +7,7 @@ function Cart(){
 
     const cart = useContext(DataContext).cart;
 
+
     return (
         <div className="cart">
             <h1>Welcome to Cam Expert store</h1>
@@ -22,11 +23,8 @@ function Cart(){
                 <div className="col">
                     <h4>${prod.price}</h4>
                 </div>
-                <div className="col">
-                    <button className="btn btn-danger">Delete</button>
-                </div>
             </div>
-                    ))}
+                ))}
             
                     
             

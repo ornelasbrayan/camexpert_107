@@ -1,4 +1,5 @@
 .ad-coupon-codes {
+    background-color: white;
     display: block;
     width: 400px;
     border:  1px solid gray;
@@ -14,4 +15,8 @@
 .forms {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.ulist {
+    margin: 10px 20px;
 }

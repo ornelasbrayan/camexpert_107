@@ -2,3 +2,16 @@
     background-color: #E7E7E7;
     text-align: center;
 }
+
+.home img {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 900px;
+}
+
+.rowfirst {
+    background-color: white;
+    padding: 20px;
+}
+
+
