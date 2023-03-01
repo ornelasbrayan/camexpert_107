@@ -1,3 +1,5 @@
+import axios from "axios";
+
 var catalog = [
     {
         "title": "EOS Rebel T8i",
@@ -74,10 +76,16 @@ var catalog = [
 
 class DataService {
 
-    getProducts() {
-        // TODO: connect to server and retrive to products to display
+    async getProducts() {
+        let response = await axios.get("http://127.0.0.1:5000/api/catalog");   
+        return response.data;
+        // use the line below to test w/o server
+        // return catalog;
+    }
 
-        return catalog;
+    async saveProduct(product){
+        let response = await axios.post("http://127.0.0.1:5000/api/catalog", product);
+        return response.data;
     }
 
 

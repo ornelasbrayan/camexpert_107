@@ -1,6 +1,7 @@
 .ad-products {
+    background-color: white;
     display: block;
-    width: 400px;
+    width: 500px;
     border:  1px solid gray;
     border-radius: 10px;
     margin: 20px;
@@ -12,6 +13,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.ad-products h3 {
+    margin-top: 10px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .forms {
     margin-left: 10px;
     margin-right: 10px;
@@ -19,4 +26,8 @@
 
 .my-control button {
     margin-top: 10px;
+}
+
+.ulist {
+    margin: 10px 20px;
 }

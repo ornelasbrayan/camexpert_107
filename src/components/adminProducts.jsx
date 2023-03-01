@@ -1,10 +1,15 @@
 import "./adminProducts.css"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import DataService from "../services/dataService";
 
 function AdminProducts(){
 
     const [product, setProduct] = useState({});
     const [allProducts, setAllProducts] = useState([]);
+
+    useEffect(function(){
+        loadCatalog();
+    },[]);
     
     function textChanged(e) {
         let text = e.target.value;
@@ -15,13 +20,26 @@ function AdminProducts(){
         setProduct(copy);
     }
     
-    function saveProduct() {
+    async function saveProduct() {
         console.log(product);
+        let savedProd = {...product};
+        savedProd.price = parseFloat(savedProd.price);
+        let service = new DataService();
+        service.saveProduct(savedProd);
+        
 
         let copy = [...allProducts];
         copy.push(product);
         setAllProducts(copy);
     }
+
+    async function loadCatalog(){
+        let service = new DataService();
+        let prod = await service.getProducts();
+        setAllProducts(prod);
+
+    }
+
 
     return (
         <div className="ad-products">
@@ -56,10 +74,13 @@ function AdminProducts(){
                 <div className="my-control center">
                     <button onClick={saveProduct} className="btn btn-dark">Save</button>
                 </div>
+
+                <h3>Products on catalog</h3>
+
             </div>
 
-            <ul>
-                {allProducts.map(prod => <li key={prod.title}>{prod.title}</li>)}
+            <ul className="list-group list-group-flush ulist">
+                {allProducts.map(prod => <li className="list-group-item" key={prod.title}>{prod.title} - ${prod.price}</li>)}
             </ul>
 
         </div>

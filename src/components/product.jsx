@@ -22,10 +22,6 @@ function Product(props){
         return total.toFixed(2);
     }
 
-    function addProduct() {
-        console.log(`Adding ${quantity} ${props.data.title}`);
-    }
-
     function handleAdd(){
         console.log("Button clicked!", props.data);
         addProductToCart(props.data);
