@@ -2,3 +2,20 @@
     text-align: center;
     background-color: #E7E7E7;
 }
+
+.desc {
+    margin-top: 30px;
+}
+
+.button-marg {
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+
+.img-width {
+    width: 600px;
+}
+
+.ship {
+    margin-top: 25px
+}

@@ -4,42 +4,34 @@ import { useState } from 'react';
 function About(){
 
     const [visible, setVisible] = useState(false);
-    const [phoneVisible, setPhoneVisible] = useState(false);
 
     function toggleEmail(){
         setVisible(!visible);
     }
 
     function getEmail(){
-        return visible ? 'ornelas.brayan@uabc.edu.mx' : '';
-    }
-
-    function validateCode(e){
-        const text = e.target.value;
-        
-        if (text.toLowerCase() === "brayan"){
-            setPhoneVisible(true);
-        }else{
-            setPhoneVisible(false);
-        }
-    }
-
-    function getNumber(){
-        return phoneVisible ? '471238484' : '';
+        return visible ? 'camexpert@gmail.com' : '+1 (800) 531-314';
     }
 
 
     return(
         <div className="about">
-            <h1>About me</h1>
-            <h3>Brayan Ornelas</h3>
-            <h4>{getEmail()}</h4>
-            <button className="btn btn-outline-dark" onClick={toggleEmail}>Show email</button>
+            <h1 className="">About us</h1>
+            <h3>Cam Expert</h3>
+            <div className="desc">
+                <h4>We specialize in selling Canon products with the best customer service</h4>
+                <img className="img-width" src="./images/canon-img.jpg" alt="" />
+            </div>
+            <div className="ship">
+                <h4>We have shipments all over the world.</h4>
+            </div>
+            
+            <div className="button-marg">
+                <h4>{getEmail()}</h4>
+                <button className="btn btn-outline-dark" onClick={toggleEmail}>Show contact info</button>
+            </div>
 
-            <hr />
-            <p>Type the code to see my phone number</p>
-            <input onChange={validateCode} placeholder="code" />
-            <h6 className="mt-3">{getNumber()}</h6>
+
         </div>
     );
 }

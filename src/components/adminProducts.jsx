@@ -21,7 +21,6 @@ function AdminProducts(){
     }
     
     async function saveProduct() {
-        console.log(product);
         let savedProd = {...product};
         savedProd.price = parseFloat(savedProd.price);
         let service = new DataService();
